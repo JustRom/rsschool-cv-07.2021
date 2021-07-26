@@ -29,10 +29,18 @@ h3 {
 }
 h4 {
   text-align: center;
-  font-size: 28px;
+  font-size: 44px;
   clear: left;
   margin: auto;
   text-decoration: underline;
+}
+h5 {
+  text-align: center;
+  font-size: 44px;
+  clear: left;
+  margin: auto;
+  text-decoration: underline bisque;
+  color: bisque;
 }
 img {
   border: 3px solid #93a0a5;
@@ -42,6 +50,7 @@ img {
 
 line {
   text-decoration: underline bisque;
+  color: bisque;
 }
 
 header {
@@ -72,6 +81,7 @@ a {
 .logo {
   float: right;
   width: 14%;
+  color: bisque;
 }
 .year {
   font-size: 34px;
