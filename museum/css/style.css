@@ -535,24 +535,28 @@ html {
 *::after {
   box-sizing: inherit;
 }
-a {
+a,
+h1,
+p {
   text-decoration: none;
-  color: #ffffff;
 }
 body {
-  font-family: "Forum";
+  font-family: "Roboto";
   font-style: normal;
   font-size: 16px;
   line-height: 1.2;
   font-weight: normal;
-  color: #8f8f8f;
   margin: 0 auto;
 }
+
 .main-container {
   max-width: 1440px;
   margin: 0 auto;
   width: calc(100% - 40px);
 }
+
+/* header styles start */
+
 .header-bg {
   height: 200px;
   background: #030303;
@@ -604,11 +608,16 @@ header {
   align-items: flex-end;
   justify-content: space-between;
 }
+.header-logo:hover,
+.header-logo:active,
+.header-logo:focus {
+  opacity: 0.5;
+}
 .nav-li {
-  margin-right: 76px;
-  font-family: Roboto;
+  margin-right: 80px;
+  font-family: "Roboto";
   font-style: normal;
-  font-weight: 200;
+  font-weight: 100;
   font-size: 22px;
   line-height: 50px;
   letter-spacing: 2px;
@@ -617,4 +626,144 @@ header {
 }
 .nav-li:last-child {
   margin-right: 0px;
+}
+.nav-li:hover,
+.nav-li:active,
+.nav-li:focus {
+  opacity: 0.75;
+}
+
+/* header styles end */
+
+/* main styles start */
+/* section Welcome start*/
+.welcome {
+  min-height: 100vh;
+  background-image: url(../assets/img/background.jpg);
+  background-repeat: no-repeat;
+  background-color: #030303;
+  background-position: top right;
+  background-size: calc(65% - 20px);
+}
+.welcome-case {
+  height: 180px;
+  width: 598px;
+  padding-top: 114px;
+}
+.section-title {
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.dark-section {
+  color: #ffffff;
+}
+.castle {
+  padding-top: 136px;
+}
+.castle-text {
+  font-family: "Roboto";
+  font-style: normal;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 2px;
+}
+.button-case {
+  padding-top: 76px;
+}
+.discover {
+  width: 360px;
+  height: 75px;
+  background-color: #710707;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  border: 0;
+}
+.discover:hover,
+.discover:active,
+.discover:focus {
+  background: #920707;
+}
+/* section Welcome end*/
+/* section Visiting start*/
+.visit {
+  color: #9d8665;
+}
+.visiting {
+  padding-top: 75px;
+}
+.underline-title {
+  position: relative;
+}
+.underline-title::after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #710707;
+}
+.virtual-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 60px;
+  max-width: 1440px;
+  padding-top: 75px;
+}
+.cards-title {
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 35px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #000000;
+  padding-top: 25px;
+}
+h3.cards-title {
+  position: relative;
+}
+h3.cards-title::after {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  left: 0;
+  right: 140px;
+  height: 3px;
+  width: 300px;
+  background-color: #710707;
+  transition: width 0.7s linear;
+}
+h3.cards-title:hover::after {
+  width: 100%;
+}
+.cadrs-review {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 200;
+  line-height: 26px;
+  color: #000000;
+}
+.cadrs-review-360 {
+  font-size: 22px;
+  padding-top: 21px;
+}
+
+.google {
+  font-size: 18px;
+  line-height: 21px;
+  padding-top: 10px;
 }
