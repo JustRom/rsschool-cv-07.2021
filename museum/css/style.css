@@ -529,6 +529,7 @@ textarea {
 }
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *,
 *::before,
@@ -611,7 +612,7 @@ header {
 .header-logo:hover,
 .header-logo:active,
 .header-logo:focus {
-  opacity: 0.5;
+  color: #9d8665;
 }
 .nav-li {
   margin-right: 80px;
@@ -630,7 +631,7 @@ header {
 .nav-li:hover,
 .nav-li:active,
 .nav-li:focus {
-  opacity: 0.75;
+  color: #9d8665;
 }
 
 /* header styles end */
@@ -638,7 +639,7 @@ header {
 /* main styles start */
 /* section Welcome start*/
 .welcome {
-  min-height: 100vh;
+  min-height: 80vh;
   background-image: url(../assets/img/background.jpg);
   background-repeat: no-repeat;
   background-color: #030303;
@@ -693,7 +694,7 @@ header {
 .discover:hover,
 .discover:active,
 .discover:focus {
-  background: #920707;
+  background: #9d8665;
 }
 /* section Welcome end*/
 /* section Visiting start*/
@@ -718,9 +719,12 @@ header {
 .virtual-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 60px;
+  gap: 60px 20px;
   max-width: 1440px;
-  padding-top: 75px;
+  padding-top: 120px;
+}
+.block {
+  display: block;
 }
 .cards-title {
   font-family: "Forum";
@@ -733,10 +737,13 @@ header {
   color: #000000;
   padding-top: 25px;
 }
-h3.cards-title {
+.block-padding {
+  margin-bottom: 76px;
+}
+.h3-title {
   position: relative;
 }
-h3.cards-title::after {
+.h3-title::after {
   content: "";
   position: absolute;
   bottom: -9px;
@@ -747,8 +754,8 @@ h3.cards-title::after {
   background-color: #710707;
   transition: width 0.7s linear;
 }
-h3.cards-title:hover::after {
-  width: 100%;
+.h3-title:hover::after {
+  width: 94%;
 }
 .cadrs-review {
   font-family: "Roboto";
@@ -766,4 +773,58 @@ h3.cards-title:hover::after {
   font-size: 18px;
   line-height: 21px;
   padding-top: 10px;
+}
+/*section Visiting start*/
+/*section Explore start*/
+.explore {
+  background-color: #030303;
+  padding-top: 5px;
+  height: max-content;
+}
+.las_meninas {
+  float: right;
+  padding-top: 15px;
+  padding-bottom: 75px;
+}
+.explore-container {
+  display: flex;
+  padding-top: 75px;
+}
+.explore-case {
+  width: 50%;
+}
+.swap-color {
+  color: #caaa7d;
+}
+.underline-title-explore {
+  position: relative;
+}
+.underline-title-explore::after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  height: 3px;
+  width: 90%;
+  background-color: #710707;
+}
+.explore-text {
+  padding-top: 105px;
+  width: 91%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 38px;
+  color: #ffffff;
+}
+.explore-part {
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+/*section Explore end*/
+/*section Video start*/
+.video-bar {
+  background-color: #030303;
+  height: 85px;
 }
