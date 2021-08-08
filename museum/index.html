@@ -134,8 +134,7 @@
                         <p class="cadrs-review-360">360° Virtual Tour</p>
                         <p class="gooole">Google Street Panorama View</p>
                     </div>
-
-                </div>
+                    </div>
                 </a>
             </div>
         </div>
@@ -156,16 +155,111 @@
                 <div class="las_meninas"><img src="/museum/assets/img/las_meninas.jpg" alt="las_meninas">
                 </div>
             </div>
-
         </div>
     </section>
-    <section class="video" id="#video">
+    <section class="video main-container" id="video">
+        <div class="video-container">                    
+            <div class="video-img">
+                <a href="#" class="video-button">
+                    <img src="/museum/assets/svg/Group.svg" alt="play">
+                </a>
+            </div>
+            <img src="/museum/assets/img/video.jpg" alt="video">
+            <div class="video-bar">
+                <div class="video-bar-buttons">
+                    <a href="#"><img src="/museum/assets/img/back.png" alt="back"></a>
+                    <a href="#"><img src="/museum/assets/img/play.png" alt="play"></a>
+                    <a href="#"><img src="/museum/assets/img/next.png" alt="next"></a>
+                </div>
+                <div class="input-progress">
+                   <input type="range" value="40" min="0" max="100" step="1" class="progress">
+                </div>
+                <div class="mute">
+                   <a href="#" ><img src="/museum/assets/img/mute.png" alt="mute"></a>
+                </div>
+                <div class="volume-block">
+                    <input type="range" value="40" min="0" max="100" step="1" class="volume">
+                </div>
+                <div class="fullscreen">
+                   <a href="#" ><img src="/museum/assets/img/fulscreen.png" alt="fulscreen"></a>
+                </div>
+            </div>
+        </div>
+        <div class="video-text">
+            <div class="section-video-text">
+                <h2 class="video-journey section-title">Video journey</h2>
+            </div>
+            <div class="video-text-enter">
+                <p class="text-enter">Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
+            </div>
+        </div>
+    </section>
+    <section class="tickets" id="tickets">
         <div class="main-container">
-                <div class="video-container">
-                  <img src="/museum/assets/img/video.jpg" alt="video">
-                  <div class="video-bar">
+            <div class="tickets-title underline-title-tickets ">
+               <h2 class="section-title dark-section">Buy tickets</h2>
+            </div>
+            <div class="tickets-container">
+                 <div class="tickets-pic"><img src="/museum/assets/img/tickets-pic.jpg" alt="tickets-pic">
+                   <div class="tickets-select">
+                    <div class="tickets-type">
+                        <h4 class="small-title">Ticket Type</h4>
+                        <label class="container">Permanent exhibition
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Temporary exhibition
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Combined Admission
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                  </div>
+                  <div class="amount">
+                    <h4 class="small-title amount-title">Amount</h4>
+                    <p class="basic small-title">Basic 18+</p>
+                    <div class="button-number">
+                        <button type="button" class="button-plus" onclick="this.nextElementSibling.stepDown()">-</button>
+                        <input type="number" min="0" max="20" value="1" readonly class="number">
+                        <button type="button" class="button-minus" onclick="this.previousElementSibling.stepUp()">+</button>
+                    </div>
+                    <p class="senior small-title">Senior 65+</p>
+                    <div class="button-number">
+                        <button type="button" class="button-plus" onclick="this.nextElementSibling.stepDown()">-</button>
+                        <input type="number" min="0" max="20" value="1" readonly class="number">
+                        <button type="button" class="button-minus" onclick="this.previousElementSibling.stepUp()">+</button>
+                    </div>
+                    <h4 class="small-title amount-title total">Total €220</h4>
+                    <div class="button-case-tickets">
+                        <a href="#" class="buy-block">
+                            <button type="submit" class="buynow discover">Buy Now</button>
+                        </a>
+                    </div>
                   </div>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section class="contacts" id="contacts">
+        <div class="main-container">
+            <div class="section-title underline-title">
+                <h2 class="visit">Contacts</h2>
+            </div>
+            <div class="map">
+                <img src="/museum/assets/img/map.jpg" alt="map">
+            </div>
+            <div class="contacts-container">
+                
+                <div class="visit-conteiner contacts-text">
+                    <h4 class="adress small-title">Palais Royal<br>Musee du Louvre</h4>
+                    <p class="base">adress:75001 Paris, France</p>
+                    <p class="base">phone:+33(0) 1 40 20 50 50</p>
+                    <p class="base">mail:info@louvre.fr</p>
+                </div>
+            </div>
         </div>
     </section>
 </main>
